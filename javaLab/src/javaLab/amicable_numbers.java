@@ -30,11 +30,11 @@ public class amicable_numbers {
 		
 		if((sum_num2==num1) && (sum_num1==num2))
 		{
-			System.out.println(num1+" and "+num2+" are ambience numbers!!");
+			System.out.println(num1+" and "+num2+" are amicable numbers!!");
 		}
 		else
 		{
-			System.out.println(num1+" and "+num2+" are not ambience numbers!!");
+			System.out.println(num1+" and "+num2+" are not amicable numbers!!");
 		}
 	}
 

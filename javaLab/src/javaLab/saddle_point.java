@@ -30,20 +30,25 @@ public class saddle_point {
 			}
 			System.out.println();
 		}
-		
+		int temp=0;
 		for(i=0;i<row;i++)
 		{
 			for(j=0;j<column;j++)
 			{
-			int min_row=arr[0][i],max_col=arr[0][i];
+			int min_row=arr[0][i],max_col=arr[i][0];
 				if(arr[j][i]<min_row)
 				{
 					min_row=arr[i][j];
 				}
 				
-				if(arr[i][j]>max_col)
+				for(i=0;i<column;i++)
 				{
-					max_col=arr[j][i];
+					if(arr[i][j]>max_col)
+					{
+						temp=max_col;
+						max_col=arr[i][j];
+						arr[i][j]=temp;
+					}
 				}
 				
 			}

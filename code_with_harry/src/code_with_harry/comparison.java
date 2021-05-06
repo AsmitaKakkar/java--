@@ -10,14 +10,7 @@ public class comparison {
 		System.out.println("Enter the number to be compared!!");
 		Scanner sc=new Scanner(System.in);
 		int to_comp=sc.nextInt();
-		if(num>to_comp)
-		{
-			System.out.println(num + " is greater than " + to_comp);
-		}
-		else
-		{
-			System.out.println(num + " is not greater than "+to_comp);
-		}
+		System.out.println(num>to_comp);
 
 	}
 

@@ -6,7 +6,8 @@ public class replace_name {
 		// TODO Auto-generated method stub
 		String str="Dear <|name|> , Thanks a lot!!";
 		System.out.println(str);
-		System.out.println(str.replace("<|name|>","Asmita"));
+		str=str.replace("<|name|>","Asmita");
+		System.out.println(str);
 
 	}
 

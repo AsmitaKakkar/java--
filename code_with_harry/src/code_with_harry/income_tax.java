@@ -14,17 +14,20 @@ public class income_tax {
 		if(income>=250000 && income<=500000)
 		{
 			
-			 tax=income*5/100;
+			 tax=tax+((income-250000)*5/100);
 			 amount=income-tax;
 		}
 		else if(income>=500000 && income<=1000000)
 		{
-			 tax=income*20/100;
+			 tax=tax+((500000-250000)*5/100);
+			 tax=tax+((income-500000)*20/100);
 			 amount=income-tax;
 		}
 		else 
 		{
-			 tax=income*30/100;
+			 tax=tax+((500000-250000)*5/100);
+			 tax=tax+((1000000-500000)*20/100);
+			 tax=tax+((income-1000000)*30/100);
 			 amount=income-tax;
 		}
 		

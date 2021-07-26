@@ -22,7 +22,7 @@ public class Average_using_methods {
 		//Scanner sc=new Scanner(System.in);
 		//int ...num=sc.nextInt();
 		System.out.println("Average of 2,3,4 are => "+average(2,3,4));
-		System.out.println("Average of 4 and 5 are=> "+average(4,5));
+		System.out.println("Average of 4 and 5 are => "+average(4,5));
 	}
 
 }

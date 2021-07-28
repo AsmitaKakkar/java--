@@ -2,7 +2,7 @@ package code_with_harry;
 
 import java.util.Scanner;
 
-class Square{
+/*class Square{
 	
 	public int side()
 	{
@@ -11,6 +11,7 @@ class Square{
 		int a=sc.nextInt();
 		return a;
 	}
+	
 }
 
 public class Classes_prob3 {
@@ -30,6 +31,52 @@ public class Classes_prob3 {
 		int perimeter=4*a;
 		System.out.println("Perimeter of Square>>>>>>>>>>>>>>>>>"+perimeter);
 
+	}
+
+}
+*/
+
+
+
+class Square{
+	
+	public int area(int side)
+	{
+		int a=side*side;
+		return a;
+	}
+	
+	public int perimeter(int side)
+	{
+		int p=4*side;
+		return p;
+	}
+	
+}
+
+
+
+public class Classes_prob3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the length of the side of square!!");
+		int side=sc.nextInt();
+		
+		Square sq=new Square();
+		
+		int area=sq.area(side);
+		System.out.println("Area of square => "+area);
+		
+		int perimeter=sq.perimeter(side);
+		System.out.println("Perimeter of square => "+perimeter);
+		
+		
+		
+		
+		
 	}
 
 }

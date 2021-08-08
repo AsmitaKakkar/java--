@@ -1,6 +1,9 @@
+//******************LIL INCOMPLETE***********************
+
 package code_with_harry;
 
 import java.util.Random;
+import java.lang.Math;
 import java.util.Scanner;
 
 class Game
@@ -9,8 +12,9 @@ class Game
 	
 	public Game()
 	{
-		Random rand=new Random(100);
-		int num=rand.nextInt();
+	   // Random rand=new Random();
+		//int num=(int) (rand.nextInt(1000));
+		int num=(int) (Math.random()*100);
 	}
 	
 	public int getRandNum()
@@ -45,11 +49,13 @@ class Game
 			{
 				System.out.println("OHHHOOOOO !! You missed this time !!");
 				System.out.println("Guess a little larger number !!");
+				return flag;
 			}
 			else
 			{
 				System.out.println("UFFFFFF!! the number is tooo large !!");
 				System.out.println("Guess the litlle smaller number!!");
+				return flag;
 			}
 		
 		
@@ -82,6 +88,8 @@ public class cwh_exercise3_guessTheNumber_game {
 		boolean flag=false;
 		Game gm=new Game();
 		gm.getRandNum();
+		System.out.println("Random number-> ");
+		System.out.println(gm.getRandNum());
 		do
 		{
 			int n=gm.takeUserInput();
